@@ -19,11 +19,12 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>com.jwebmp</groupId>
-        <artifactId>jwebmp-builder</artifactId>
+        <groupId>com.jwebmp.jpms</groupId>
+        <artifactId>jpms-pending-modules</artifactId>
         <version>0.0.0_0-SNAPSHOT</version>
     </parent>
 
+    <groupId>com.jwebmp.jpms.commons</groupId>
     <artifactId>commons-fileupload</artifactId>
 
     <name>Apache Commons FileUpload</name>
@@ -215,7 +216,6 @@
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <version>4.12</version>
             <scope>test</scope>
         </dependency>
 
@@ -226,8 +226,6 @@
             <type>jar</type>
             <scope>provided</scope>
         </dependency>
-
-
         <dependency>
             <groupId>portlet-api</groupId>
             <artifactId>portlet-api</artifactId>
@@ -235,7 +233,7 @@
             <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>com.jwebmp</groupId>
+            <groupId>com.jwebmp.jpms.commons</groupId>
             <artifactId>commons-io</artifactId>
             <version>${project.version}</version>
         </dependency>
@@ -395,7 +393,7 @@
         <profile>
             <id>jdk9</id>
             <activation>
-                <jdk>9</jdk>
+                <jdk>[9,)</jdk>
             </activation>
             <properties>
                 <!-- coverall version 4.3.0 does not work with java 9, see https://github.com/trautonen/coveralls-maven-plugin/issues/112 -->
