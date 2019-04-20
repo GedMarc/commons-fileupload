@@ -235,7 +235,7 @@
         <dependency>
             <groupId>com.jwebmp.jpms.commons</groupId>
             <artifactId>commons-io</artifactId>
-            <version>${project.version}</version>
+            <type>jar</type>
         </dependency>
     </dependencies>
 
