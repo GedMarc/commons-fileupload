@@ -221,10 +221,9 @@
 
 
         <dependency>
-            <groupId>javax.servlet</groupId>
+            <groupId>com.jwebmp.thirdparty</groupId>
             <artifactId>javax.servlet-api</artifactId>
             <type>jar</type>
-            <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>portlet-api</groupId>
