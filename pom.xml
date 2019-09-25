@@ -24,7 +24,7 @@
         <version>0.0.0_0-SNAPSHOT</version>
     </parent>
 
-    <groupId>com.jwebmp.jpms.thirdparty.commons</groupId>
+    <groupId>com.jwebmp.jpms.thirdparty</groupId>
     <artifactId>commons-fileupload</artifactId>
 
     <name>Apache Commons FileUpload</name>
@@ -226,7 +226,7 @@
             <scope>provided</scope><type>jar</type>
             </dependency>
         <dependency>
-            <groupId>com.jwebmp.jpms.thirdparty.commons</groupId>
+            <groupId>com.jwebmp.jpms.thirdparty</groupId>
             <artifactId>commons-io</artifactId>
             <type>jar</type>
             </dependency>
